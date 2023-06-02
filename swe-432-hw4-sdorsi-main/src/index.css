@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main{
+  display: -ms-grid;  
+  width: 100%;
+  height: 100%;
+}
+
+.top{/*fixed*/
+  display: grid;
+  height:30%;
+  width:100%;
+}
+
+input[type="text"] {/*Fixed size*/
+  display:inline;
+  width: 800px;
+  height: 35px;
+  font-size: large;
+}
+
+.table{
+  display:flexbox;
+  float: left;
+  width: 70%;
+  background-color: rgb(180, 180, 180);
+  text-align:start;  
+  table-layout: fixed;
+  line-height: 50px;
+}
+
+.list{
+  vertical-align: top;
+  overflow-x:scroll;
+  white-space: nowrap;
+  background-color: rgb(206, 206, 206);
+  padding-right: 20px;
+}
+
+.action{
+  vertical-align: top;
+  overflow-x:scroll;
+  white-space: nowrap;
+  background-color: rgb(206, 206, 206);
+  padding-right: 20px;
+}
+
+.history{
+  display:flexbox;
+  float:right;
+  width: 30%;
+  background-color: rgb(216, 216, 216);
+}
+
+/*Below for transition animation and z-index*/
+.box0 {
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background-color:tomato;
+  font-size: 20px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+   -webkit-transition-property: width height background-color font-size left top color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  transition-property: width height background-color font-size left top color;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+
+.box1{
+  z-index: -1;
+  width: 150px;
+  height: 100px;
+  background-color: violet;
+  font-size: 18px;
+  left: 110px;
+  top: 0px;
+  position: absolute;
+  -webkit-transition-property: width height background-color font-size left top color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  transition-property: width height background-color font-size left top color;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+.box2{
+  z-index: -1;
+  width: 232px;
+  height: 100px;
+  background-color: orange;
+  font-size: 18px;
+  left: 272px;
+  top: 0px;
+  position: absolute;
+  -webkit-transition-property: width height background-color font-size left top color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  transition-property: width height background-color font-size left top color;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+.box3{
+  z-index: -1;
+  width: 125px;
+  height: 100px;
+  background-color: yellowgreen;
+  font-size: 18px;
+  left: 520px;
+  top: 0px;
+  position: absolute;
+  -webkit-transition-property: width height background-color font-size left top color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-timing-function: linear;
+  transition-property: width height background-color font-size left top color;
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+}
+
+
